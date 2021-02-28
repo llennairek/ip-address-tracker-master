@@ -5,23 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
     <title>Frontend Mentor | IP Address Tracker</title>
 </head>
 
 <body>
+    <header>
+        <h1>IP Address Tracker</h1>
 
+        <div class="input-wrapper">
+            <input type="text" name="ip" id="ip">
+            <button type="submit"><img src="./images/icon-arrow.svg" alt=""></button>
+        </div>
 
+        <div class="informations-wrapper">
+            <div class="informations">
+                <h2>IP ADDRESS</h2>
+                <p class="ip">Retrieving information</p>
+            </div>
+            <div class="informations">
+                <h2>LOCATION</h2>
+                <p class="location">Retrieving information</p>
+            </div>
+            <div class="informations">
+                <h2>TIMEZONE</h2>
+                <p class="timezone">Retrieving information</p>
+            </div>
+            <div class="informations">
+                <h2>ISP</h2>
+                <p class="isp">Retrieving information</p>
+            </div>
+        </div>
+    </header>
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/llennairek">Baf</a>.
-    </div>
+    <main>
+        <div id="map">
+
+        </div>
+        <div class="loader">
+            Loading
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+        </div>
+    </main>
 
     <script src="./app.js"></script>
 </body>
 
 </html>
-
-<!-- IP Address Tracker Search for any IP address or domain IP Address Location Timezone UTC -->
-<!-- add offset value dynamically using the API -->
-<!-- ISP -->
